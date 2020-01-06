@@ -23,7 +23,7 @@
 #    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 #    SOFTWARE.
 #
-#    <Rev, 1.0>
+#    <Rev, 1.1>
 #
 #
 import bpy
