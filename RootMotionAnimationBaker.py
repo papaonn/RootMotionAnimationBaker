@@ -26,8 +26,8 @@
 #    <Rev, 1.0>
 #
 #
-
 import bpy
+import mathutils
 
 #
 # index of list
@@ -48,7 +48,8 @@ bpy.context.scene.frame_set( 0 )
 # extract root motion position in 1st frame 
 rootBone = "LowerBody";
 root = bpy.context.object.pose.bones[ rootBone ]
-rootPosition = root.location.copy()
+#rootPosition = root.location.copy()
+rootPosition = mathutils.Vector((0.0, 0.0, 0.0))
 
 # calibrate IK Bones positions to associated target bones
 targetBones = [ "IK-Neck", "IK-LowerBody", "IK-HandLeft", "IK-HandRight", "IKFoot-Left", "IKFoot-Right" ]
